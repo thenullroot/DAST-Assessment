@@ -1,5 +1,11 @@
 # DVWA DAST Assessment
 
+[![OWASP ZAP](https://img.shields.io/badge/Tool-OWASP%20ZAP-blue)](https://www.zaproxy.org/)
+[![Burp Suite](https://img.shields.io/badge/Tool-Burp%20Suite-orange)](https://portswigger.net/burp)
+[![Kali Linux](https://img.shields.io/badge/OS-Kali%20Linux-purple)](https://www.kali.org/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-green)](LICENSE)
+[![LinkedIn](https://img.shields.io/badge/Author-Aniket%20Nayak-blue)](https://www.linkedin.com/in/aniket-nayak)
+
 ## 📌 Project Overview
 This repository documents a **Dynamic Application Security Testing (DAST)** assessment performed against **Damn Vulnerable Web Application (DVWA)**.  
 The goal was to compare **unauthenticated vs authenticated scans**, validate critical findings manually, and produce a professional penetration testing deliverable.  
