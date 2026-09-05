@@ -52,19 +52,17 @@ The project demonstrates a complete workflow: environment setup, automated scann
 
 ## 📂 Folder Structure
 
-dvwa-dast-assessment/
-├── evidence/              # Screenshots and validation notes
-│   ├── authenticated/     # Authenticated scan evidence
-│   ├── unauthenticated/   # Unauthenticated scan evidence
-│   ├── validation/        # Manual validation (RCE, Source Disclosure, Error Disclosure, Directory Browsing, HTTP Only Site)
-│   ├── setup/             # Environment and tool version screenshots
-│   └── README.md          # Evidence folder overview
-├── methodology/           # Notes and testing approach
-├── notes/                 # Scope, authorization, comparison notes
-├── report/                # ZAP HTML exports + final_dvwa_dast_report.txt
-├── zap/                   # ZAP session files for reproducibility
-└── README.md              # Project overview (this file)
-
+- 📁 evidence/ — Screenshots and validation notes  
+  - authenticated/ — Authenticated scan evidence  
+  - unauthenticated/ — Unauthenticated scan evidence  
+  - validation/ — Manual validation (RCE, Source Disclosure, Error Disclosure, Directory Browsing, HTTP Only Site)  
+  - setup/ — Environment and tool version screenshots  
+  - README.md — Evidence folder overview  
+- 📁 methodology/ — Notes and testing approach  
+- 📁 notes/ — Scope, authorization, comparison notes  
+- 📁 report/ — ZAP HTML exports + final report  
+- 📁 zap/ — ZAP session files for reproducibility  
+- 📄 README.md — Project overview  
 
 ---
 
