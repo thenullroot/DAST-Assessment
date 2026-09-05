@@ -4,7 +4,7 @@
 [![Burp Suite](https://img.shields.io/badge/Tool-Burp%20Suite-orange)](https://portswigger.net/burp)
 [![Kali Linux](https://img.shields.io/badge/OS-Kali%20Linux-purple)](https://www.kali.org/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green)](LICENSE)
-[![LinkedIn](https://img.shields.io/badge/Author-Aniket%20Nayak-blue)](https://www.linkedin.com/in/aniket-nayak)
+[![LinkedIn](https://img.shields.io/badge/Author-Aniket%20Nayak-blue)](https://www.linkedin.com/in/aniket-nayak-634495317/)
 
 ## 📌 Project Overview
 This repository documents a **Dynamic Application Security Testing (DAST)** assessment performed against **Damn Vulnerable Web Application (DVWA)**.  
@@ -94,4 +94,4 @@ This project was conducted for **learning and demonstration of DAST methodology*
 ---
 
 ## 📌 Author
-Conducted and documented by **Aniket Nayak (LinkedIn)** — aspiring penetration tester, focused on vulnerability research, red teaming, and offensive security.
+Conducted and documented by **Aniket Nayak [![LinkedIn](https://img.shields.io/badge/Author-Aniket%20Nayak-blue)](https://www.linkedin.com/in/aniket-nayak-634495317/)** — aspiring penetration tester, focused on vulnerability research, red teaming, and offensive security.
