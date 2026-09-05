@@ -1,0 +1,5 @@
+Formal Scope Statement:
+
+This penetration testing and dynamic application security assessment targets the Damn Vulnerable Web Application (DVWA) hosted within the Metasploitable 2 virtual environment at 192.168.141.129. The engagement focuses exclusively on DVWA’s web components and their associated vulnerabilities, including authentication, session management, and modules such as Brute Force, Command Execution, CSRF, File Inclusion, SQL Injection (standard and blind), File Upload, and XSS (reflected and stored).
+
+Out‑of‑scope elements include all other Metasploitable 2 services (e.g., SSH, FTP, MySQL), unrelated web applications, and any network‑level or system‑level exploitation beyond DVWA. Testing activities are conducted in a controlled lab environment for educational and research purposes only.

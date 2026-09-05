@@ -1,0 +1,60 @@
+=============================
+DVWA DAST Comparison Report
+=============================
+
+Phase: Comparison of Unauthenticated vs Authenticated Scans
+
+-----------------------------------------------------------
+High-Risk Alerts (Authenticated Only)
+- Remote Code Execution (CVE-2012-1823) ×26
+- Source Code Disclosure (CVE-2012-1823) ×24
+
+-----------------------------------------------------------
+Medium-Risk Alerts
+- Present in both:
+  • Absence of Anti-CSRF Tokens ×1
+- Authenticated only:
+  • Application Error Disclosure ×19
+  • Directory Browsing ×3
+  • HTTP Only Site ×1
+- Unauthenticated only:
+  • Content Security Policy (CSP) Header Not Set ×3
+  • Missing Anti-clickjacking Header ×1
+
+-----------------------------------------------------------
+Low-Risk Alerts
+- Present in both:
+  • None
+- Authenticated only:
+  • Application Error Disclosure ×1
+  • Private IP Disclosure ×1
+  • Timestamp Disclosure – Unix ×2
+- Unauthenticated only:
+  • Cookie No HttpOnly Flag ×3
+  • Cookie without SameSite Attribute ×3
+  • In Page Banner Information Leak ×2
+  • Server Leaks Information via "X-Powered-By" HTTP Response Header Field(s) ×3
+  • Server Leaks Version Information via "Server" HTTP Response Header Field ×3
+  • X-Content-Type-Options Header Missing ×3
+
+-----------------------------------------------------------
+Informational Alerts
+- Authenticated only:
+  • Authentication Request Identified ×2
+  • Cookie Poisoning ×1
+  • Information Disclosure – Sensitive Information in URL ×4
+  • Information Disclosure – Suspicious Comments ×1
+  • Modern Web Application ×1
+  • Session Management Response Identified ×2
+  • User Agent Fuzzer ×3
+  • User Controllable HTML Element Attribute (Potential XSS) ×5
+- Unauthenticated only:
+  • Authentication Request Identified ×1
+  • Session Management Response Identified ×2
+
+-----------------------------------------------------------
+Interpretation:
+- Unauthenticated scan: Surface-level issues (headers, cookies, minor leaks).
+- Authenticated scan: Deep exploitable vulnerabilities (RCE, LFI, XSS, error disclosure).
+- Overlap: Some configuration issues persist across both contexts.
+-----------------------------------------------------------

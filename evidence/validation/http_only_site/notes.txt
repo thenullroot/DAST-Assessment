@@ -1,0 +1,7 @@
+Vulnerability: HTTP Only Site
+Status: Verified 
+Observation: DVWA served only over HTTP; browser shows “Not secure” warning.
+Evidence: http_only_site_validation.png
+Impact: Data transmitted in cleartext; susceptible to interception.
+Remediation: Enable HTTPS with valid TLS certificate; enforce Secure cookie flag.
+

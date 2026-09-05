@@ -1,0 +1,7 @@
+Vulnerability: Application Error Disclosure
+Status: Verified (Medium impact)
+Payload: Direct GET request to /dvwa/includes/DBMS/PGSQL.php
+Response: 500 Internal Server Error revealing Apache and PHP versions
+Evidence: error_disclosure_validation.png
+Impact: Minor information disclosure; potential fingerprinting risk
+Remediation: Implement custom error pages; suppress version headers.

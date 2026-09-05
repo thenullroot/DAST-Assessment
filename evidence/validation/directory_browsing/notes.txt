@@ -1,0 +1,5 @@
+Vulnerability: Directory Browsing
+ZAP Severity: Medium
+Manual Assessment: Low impact (only public CSS files exposed)
+Risk Justification: Directory listing enabled, but no sensitive data disclosed.
+Remediation: Disable directory listing (Options -Indexes) to follow best practices.

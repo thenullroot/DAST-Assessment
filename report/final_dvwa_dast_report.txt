@@ -1,0 +1,49 @@
+DVWA DAST Validation Report
+===========================
+
+Executive Summary
+A Dynamic Application Security Testing (DAST) assessment was conducted against DVWA in both unauthenticated and authenticated contexts. Authenticated scanning revealed deeper vulnerabilities, including exploitable high‑risk issues, while unauthenticated scanning primarily identified surface‑level misconfigurations. Manual validation was performed for all high and medium‑risk alerts to confirm exploitability and impact. Low‑risk findings were documented based on ZAP’s automated evidence.
+
+-----------------------------------------------------------
+High-Risk Findings (Validated)
+- Remote Code Execution (CVE-2012-1823) → Verified ✅
+  • Exploitable via PHP CGI argument injection.
+  • Evidence: rce_validation.png
+- Source Code Disclosure (CVE-2012-1823) → Verified ✅
+  • Application reveals PHP source when malformed requests are sent.
+  • Evidence: source_code_disclosure_validation.png
+
+-----------------------------------------------------------
+Medium-Risk Findings (Validated)
+- Application Error Disclosure → Verified ✅
+  • Application reveals stack traces and error messages.
+  • Evidence: error_disclosure_validation.png
+- Directory Browsing → Verified ✅ (Low impact in context)
+  • Directory listing enabled at /dvwa/dvwa/css/, exposing only CSS files.
+  • Evidence: directory_browsing_validation.png
+- HTTP Only Site → Verified ✅
+  • DVWA served only over HTTP; HTTPS connection failed.
+  • Evidence: http_only_site_validation.png
+
+-----------------------------------------------------------
+Low-Risk Findings (Documented from ZAP)
+- Private IP Disclosure → Documented
+- Timestamp Disclosure (Unix) → Documented
+- Cookie Flags Missing (HttpOnly, SameSite) → Documented
+- Header Issues (CSP missing, X-Content-Type-Options missing, Server leaks version info) → Documented
+- Information Disclosure (comments, banners, X-Powered-By header) → Documented
+
+-----------------------------------------------------------
+Interpretation
+- Authenticated scan: Revealed critical vulnerabilities (RCE, source disclosure) and medium‑risk issues requiring remediation.
+- Unauthenticated scan: Highlighted configuration weaknesses and informational leaks.
+- Professional judgment: Directory Browsing classified as low impact despite ZAP’s medium severity, demonstrating contextual risk assessment.
+
+-----------------------------------------------------------
+Conclusion
+Manual validation confirmed five exploitable findings:
+- 2 High‑risk (RCE, Source Disclosure)
+- 3 Medium‑risk (Error Disclosure, Directory Browsing, HTTP Only Site)
+
+Remaining alerts were documented from ZAP evidence as low‑risk informational issues.
+This assessment demonstrates the importance of authenticated scanning for uncovering deeper vulnerabilities and the value of manual validation in distinguishing true risks from low‑impact findings.

@@ -1,0 +1,7 @@
+Vulnerability: Source Code Disclosure (CVE‑2012‑1823)
+Status: Verified 
+Payload: ?-s
+Response: Raw PHP source code revealed (dvwa/vulnerabilities/sqli/index.php)
+Evidence: source_validation.png
+Impact: Arbitrary code execution and sensitive source exposure
+Remediation: Upgrade PHP to the latest supported version or configure Apache mod_rewrite to block malformed query strings.

@@ -1,0 +1,2 @@
+DVWA is an intentionally vulnerable web application designed for security testing and educational use. Authorized for local lab penetration testing.
+
