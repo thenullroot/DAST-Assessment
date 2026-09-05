@@ -12,7 +12,7 @@ The project demonstrates a complete workflow: environment setup, automated scann
 - **Burp Suite** → Manual validation and exploitation
 - **DVWA** → Target application (intentionally vulnerable)
 - **Kali Linux** → Testing environment
-- **Docker / VMware** → Lab isolation and reproducibility
+- **VMware** → Lab isolation and reproducibility
 
 ---
 
